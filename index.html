@@ -1,85 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/flowers/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/flowers/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/flowers/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/flowers/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script type="module" crossorigin src="/flowers/commonHelpers.js"></script>
+  <link rel="stylesheet" href="/flowers/assets/index-a98f0403.css">
+</head>
 
+<body>
+  <header class="page-header">
+  <div class="container header-container">
+    <a href="./index.html" class="logo">
+      <svg class="logo-icon">
+        <use href="/flowers/assets/icons-a509f57b.svg#icon-Logo"></use>
+      </svg>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/flowers/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
+    </a>
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li><a href="" class="navigation-link">Anemone</a></li>
+        <li><a href="" class="navigation-link">About us</a></li>
+        <li><a href="" class="navigation-link">Store</a></li>
+        <li><a href="" class="navigation-link">Delivery</a></li>
+        <li><a href="" class="navigation-link">Blog</a></li>
+      </ul>
+    </nav>
+    <a href="" class="contact-link">
+      <svg class="contact-icon" width="22" height="22">
+        <use href="/flowers/assets/icons-a509f57b.svg#icon-tel"></use>
+      </svg>
+    </a>
+    <button type="button" class="mobile-menu-btn-open" data-menu-open>
+      <svg class="mobile-menu-icon" width="24" height="24">
+        <use href="/flowers/assets/icons-a509f57b.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu" data-menu>
+    <div class="container mobile-menu-container">
+      <button type="button" class="mobile-menu-btn-close" data-menu-close>
+        <svg class="mobile-menu-btn-icon" width="24" height="24">
+          <use href="/flowers/assets/icons-a509f57b.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li><a href="" class="mobile-menu-link">Anemone</a></li>
+        <li><a href="" class="mobile-menu-link">About us</a></li>
+        <li><a href="" class="mobile-menu-link">Store</a></li>
+        <li><a href="" class="mobile-menu-link">Delivery</a></li>
+        <li><a href="" class="mobile-menu-link">Blog</a></li>
       </ul>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/flowers/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
   </div>
+</header>
+  <main>
+    <section class="about">
+    <div class="container">
+        <h2 class="about-title">ABOUT</h2>
+        <div class="about-wrapper">
+            <p class="about-desc">We are a minimalistic flower studio. We love people and flowers. Therefore, every day
+                we
+                give people the
+                beauty and joy
+                creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+            <picture>
+
+
+                <source media="(min-width: 1158px)" srcset="/flowers/assets/desc1x-0d16a159.png 1x, /flowers/assets/desc2x-d53b2688.png 2x"
+                    type="image/png" />
+
+
+                <source media="(min-width: 768px)" srcset="/flowers/assets/tab1x-9ab2a256.png 1x, /flowers/assets/tab1x-9ab2a256.png 2x"
+                    type="image/png" />
+
+
+                <source media="(max-width: 767px)" srcset="/flowers/assets/mob1x-6e3b5fa2.png 1x, /flowers/assets/mob1x-6e3b5fa2.png 2x"
+                    type="image/png" />
+                <img src="/flowers/assets/desc1x-0d16a159.png" alt="protea" width="632" height="344" loading="lazy" />
+            </picture>
+        </div>
+    </div>
 </section>
+  </main>
 
+  
+</body>
 
-    
-  </body>
 </html>
