@@ -1,5 +1,12 @@
 .delivery {
-    padding: 30px 0;
+   padding-top: 30px;
+    padding-bottom: 167px;
+      background-image: image-set(
+    url('../img/delivery/mob-1x.jpeg') 1x,
+    url('../img/delivery/mob-2x.jpeg') 2x
+  );
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 .delivery-title {
 
@@ -23,11 +30,103 @@ position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
+   
 }
 .delivery-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+ 
+}
+.delivery-dots{
+    width: 40px;
+height: 40px;
+border: 1px solid #000;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-weight: 500;
 }
 .delivery-desc {
 font-size: 14px;
 font-weight: 500;
 line-height: normal;
+width: 100%;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    .delivery {
+        padding-top: 50px;
+        padding-bottom: 304px;
+            background-image: image-set(
+    url('../img/delivery/tab-1x.jpeg') 1x,
+    url('../img/delivery/tab-2x.jpeg') 2x
+  );
+    }
+    .delivery-title{
+        font-size: 44px;
+        margin-bottom: 60px;
+
+    }
+    .delivery-title::after{
+        width: 473px;
+        left: 247px;
+    }
+    .delivery-list{
+        gap: 23px;
+      
+    }
+    .delivery-dots{
+       width: 64px;
+height: 64px;
+font-size: 26px;
+    }
+    .delivery-item{
+       gap: 20px;
+    }
+    .delivery-item::before{
+        width: 64px;
+height: 64px;
+left: -84px;
+    }
+    .delivery-desc{
+        font-size: 24px;
+    }
+    
+
+}
+@media screen and (min-width: 1280px) {
+    .delivery{
+        padding-bottom: 460px;
+                  background-image: image-set(
+    url('../img/delivery/desc1x.jpeg') 1x,
+    url('../img/delivery/desc2x.jpeg') 2x
+  );
+
+ 
+  background-size:  1280px 391px;
+  margin: 0 auto;
+    }
+    .delivery-title{
+        margin-bottom: 80px;
+    }
+    .delivery-title::after{
+        width: 985px;
+        left: 247px;
+    }
+    .delivery-list{
+        padding-left: 72px;
+        gap: 32px;
+    }
+    .delivery-item{
+        gap: 56px;
+    }
+    .delivery-desc{
+        font-size: 32px;
+    }
 }
