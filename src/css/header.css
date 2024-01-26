@@ -66,6 +66,8 @@ position: relative;
   width: 24px;
   height: 24px;
   border: none;
+  padding: 0;
+  line-height: 0;
   background-color: transparent;
 }
 .mobile-menu-btn-icon {
