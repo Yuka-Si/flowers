@@ -1,45 +1,63 @@
 
+:root {
+   --rotationDuration: 20s;
+   --hoverDuration: 0.3s;
 
+   --easeIn: cubic-bezier(0.32, 0, 0.67, 0);
+   --easeOut: cubic-bezier(0.33, 1, 0.68, 1);
 
-.circle {
-	position: relative;
-	width: 200px;
-	height: 200px;
-	border-radius: 100vmax;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+   --textColor: #2B2024;
+   --bgColor: #DCFFCA;
+ }
+
+ .wrap-hero-text {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .link__svg {
+    width: 100%;
+    height: auto;
+    transform-box: fill-box;
+    fill: var(--textColor);
+    stroke: var(--textColor);
+    stroke-width: 0.05em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+   width: 64px;
+height: 76px;
+   display: inline-block;
+   font: 400 1.55rem/1.4 "IBM Plex Serif"; 
+   text-transform: uppercase;
+   letter-spacing: 0.3em;
+   word-spacing: 0.3em;
+ }
+ 
+ .link__arrow {
+    transform: rotate(-23deg);
+    transform-origin: 50% 50%;
+    transition: transform var(--hoverDuration) / 2 var(--easeIn);
+ }
+ 
+ .link:hover .link__arrow {
+    transform: scale(1.1);
+    transition: transform var(--hoverDuration) var(--easeOut);
+ }
+     
+ .link__arrow {
+   stroke-width: 0.075em;
 }
-
-
-.logo {
-	position: absolute;
-	width: 25px;
-height: 19px;
-	background: url("../img/hero/Arrow.svg");
-
-	background-position: center;
-}
-
-.text {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	font-family: consolas;
-	color: #000;
-	font-size: 17px;
-	animation: textRotation 8s linear infinite;
-}
-
-@keyframes textRotation {
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-.text span {
-	position: absolute;
-	left: 50%;
-	font-size: 1.2em;
-	transform-origin: 0 100px;
-}
+ 
+ .link__text {
+   animation: rotate normal infinite var(--rotationDuration) linear;
+   transform-origin: 50% 50%;
+ }
+ .link:hover .link__text {
+   animation-play-state: paused;
+ }
+ 
+ @keyframes rotate {
+     to {
+         transform: rotate(360deg);
+     }
+ }
